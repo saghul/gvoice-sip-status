@@ -1,0 +1,26 @@
+Google Voice SIP service status
+===============================
+
+This is a simple application running on Google App Engine which displays the
+GV SIP service availability.
+
+It's live running at http://gvoice-sip-status.appspot.com
+
+
+How does it work?
+-----------------
+
+Every 5 minutes a cron job (running on GAE) makes a request to a SIPwPing
+(https://github.com/saghul/SIPwPing-server) server which will make a SIP
+OPTIONS request to the specified SIP URI and return the result in JSON
+format. This value is saved in Google App Engine's DataStore.
+
+Every time the page is viewed this data will be fetched and rendered.
+
+
+Man, your code sucks!
+--------------------
+
+This is my first application on GAE, I just wanted to try it out, so don't
+punish me very hard! Of course, pull requests are welcome :-)
+
