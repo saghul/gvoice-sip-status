@@ -1,0 +1,16 @@
+
+* {
+  font-family: Verdana, Helvetica, sans-serif;
+}
+
+div#header, div#content, div#footer {
+  text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+p.disclaimer {
+    font-size: 0.5em;
+}
