@@ -9,6 +9,7 @@ handlers:
 
 - url: /refresh
   script: refresh.py
+  login: admin
 
 - url: .*
   script: main.py
